@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE menu [ <!ELEMENT menu (meals, beverages)>
+<!ELEMENT meals (menuItem*)>
+    <!ELEMENT beverages (hotBeverages, otherBeverages)>
+        <!ELEMENT hotBeverages (menuItem*)>
+            <!ELEMENT otherBeverages (menuItem*)>
+                <!ELEMENT menuItem (name?, size?, price, description?, imageURL?)>
+                    <!ELEMENT name (#PCDATA)>
+                        <!ELEMENT size (#PCDATA)>
+                            <!ELEMENT price (#PCDATA)>
+                                <!ELEMENT description (#PCDATA)>
+                                    <!ELEMENT imageURL (#PCDATA)>
+                                        ]>
+
+                                        <menu>
+                                            <meals>
+                                                <menuItem>
+                                                <name>Beetroot and feta salad</name>
+                                                <price>15.00</price>
+                                                <description>Suitable for vegetarians, made with fresh beetroot.
+                                                </description>
+                                                <imageURL>images/salad.webp</imageURL>
+                                                </menuItem>
+                                                <menuItem>
+                                                <name>Sourdough Rye Sandwich</name>
+                                                <price>18.00</price>
+                                                <description>Cheese and salad sandwich made with organic, sourdough rye
+                                                    bread</description>
+                                                <imageURL>images/sandwich.webp</imageURL>
+                                                </menuItem>
+                                                <menuItem>
+                                                <name>Spinach Pie and Salad</name>
+                                                <price>20.00</price>
+                                                <description>Tasty pie with salad</description>
+                                                <imageURL>images/pie.webp</imageURL>
+                                                </menuItem>
+                                                <menuItem>
+                                                <name>Feta pancakes with salad</name>
+                                                <price>19.50</price>
+                                                <description>Tasty pancake filled with feta and salad</description>
+                                                <imageURL>images/pancake.webp</imageURL>
+                                                </menuItem>
+                                            </meals>
+                                            <beverages>
+                                                <hotBeverages>
+                                                    <menuItem>
+                                                    <size>Small</size>
+                                                    <price>3.50</price>
+                                                    <description>For coffee, please inform the staff of the coffee type.
+                                                    </description>
+                                                    <imageURL>images/small.webp</imageURL>
+                                                    </menuItem>
+                                                    <menuItem>
+                                                    <size>Regular</size>
+                                                    <price>4.00</price>
+                                                    <description>For coffee, please inform the staff of the coffee type.
+                                                    </description>
+                                                    <imageURL>images/regular.webp</imageURL>
+                                                    </menuItem>
+                                                    <menuItem>
+                                                    <size>Large</size>
+                                                    <price>4.50</price>
+                                                    <description>For coffee, please inform the staff of the coffee type.
+                                                    </description>
+                                                    <imageURL>images/large.webp</imageURL>
+                                                    </menuItem>
+                                                </hotBeverages>
+                                                <otherBeverages>
+                                                    <menuItem>
+                                                    <name>Soda</name>
+                                                    <price>3.00</price>
+                                                    <imageURL>images/sodas.webp</imageURL>
+                                                    </menuItem>
+                                                    <menuItem>
+                                                    <name>Fresh juice</name>
+                                                    <price>6.00</price>
+                                                    <imageURL>images/juices.webp</imageURL>
+                                                    </menuItem>
+                                                    <menuItem>
+                                                    <name>Bottled water</name>
+                                                    <price>2.00</price>
+                                                    <imageURL>images/water.webp</imageURL>
+                                                    </menuItem>
+                                                </otherBeverages>
+                                            </beverages>
+                                        </menu>
